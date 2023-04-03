@@ -11,97 +11,75 @@ function Footer() {
   return (
     <>
       <footer class="text-gray-600 body-font fixed inset-x-0 bottom-0">
-        <div class="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <div class=" pl-28 py-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col bg-slate-300">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center  md:text-left md:mt-0 mt-10 order-first">
+            <a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               <img src={dwrlogo} alt="logo" className="h-10 rounded-full" />
               
-              <span class="ml-3 text-xl">Develop With Ranjan</span>
+              <span class="ml-3 text-xl w-48">Develop With Ranjan</span>
             </a>
-            <p class="mt-2 text-sm text-gray-500">
-              Best place to build your project. To provide a superior user experience, I provide custom website design and responsive web development services.
+            <p class="mt-2 text-sm text-gray-500 mr-1">
+              Best place to build your project.  I provide custom website design and responsive web development services to provide a superior user experience.
             </p>
           </div>
-          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div class="flex-grow mt-3 flex flex-wrap md:pr-20 -mb-10 md:text-left text-center ">
+            <div class="lg:w-52 md:w-1/2 w-full px-10">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                PROJECTS
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Project 1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Project 2</a>
+                </li>                
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Project 3</a>
+                </li>
+                <li>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Project 4</a>
+                </li>
+              </nav>
+            </div>            
+            <div class="lg:w-60 md:w-1/2 w-full px-10">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
                 CATEGORIES
               </h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">First Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Second Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Third Link</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                  <a href="#" class="text-gray-600 hover:text-gray-800">Fourth Link</a>
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="lg:w-60 md:w-1/2 w-full px-10">
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+                CONTACT
               </h2>
               <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <li class="text-gray-600">
+                  Jharkhand, India
                 </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                <li class="text-gray-600">
+                  developwithranjan@gmail.com
                 </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
-              </h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
-              </h2>
-              <nav class="list-none mb-10">
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
+                <li class="text-gray-600">
+                  +91 6204470383
+                </li>               
               </nav>
             </div>
           </div>
         </div>
-        <div class="bg-gray-100">
+        <div class="bg-slate-400">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
             <p class="text-gray-500 text-sm text-center sm:text-left mt-2">
              Copyright © 2023 developwithranjan.com               
@@ -118,8 +96,7 @@ function Footer() {
               </a>
               <a href="http://youtube.com/@developwithranjan" target="_blank" rel="noopener noreferrer">
                 <img className="h-8 px-1" src={github} alt="github" />
-              </a>
-              
+              </a>              
             </span>
           </div>
         </div>
