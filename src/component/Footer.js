@@ -10,8 +10,8 @@ import youtube from "../images/youtube.png";
 function Footer() {
   return (
     <>
-      <footer class="text-gray-600 body-font fixed inset-x-0 bottom-0">
-        <div class=" pl-28 py-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col bg-slate-300">
+      <footer class="text-gray-600 body-font ">
+        <div class=" py-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap md:pl-20 flex-wrap flex-col bg-slate-300">
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center  md:text-left md:mt-0 mt-10 order-first">
             <a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               <img src={dwrlogo} alt="logo" className="h-10 rounded-full" />
@@ -80,7 +80,7 @@ function Footer() {
           </div>
         </div>
         <div class="bg-slate-400">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <div class="container mx-auto py-4  flex flex-wrap flex-col sm:flex-row">
             <p class="text-gray-500 text-sm text-center sm:text-left mt-2">
              Copyright © 2023 developwithranjan.com               
             </p>
