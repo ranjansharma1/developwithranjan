@@ -38,3 +38,9 @@ export const projects = [
       link: "#",
     },
   ];
+
+export const skills = [
+  "JFD", "JS","HTMl", "SprinBoot","Microservices","Cloud"
+  
+]
+
