@@ -50,3 +50,6 @@ Enter your location and generate html for it
 3. Set Credential 
 4. make sure you have same massage name in your react as in dashbord"
 
+## Adding `npm i react-toastify` for massage
+- install `npm i react-toastify` use link: https://www.npmjs.com/package/react-toastify
+- https://fkhadra.github.io/react-toastify/introduction/

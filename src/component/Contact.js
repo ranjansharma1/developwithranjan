@@ -1,7 +1,20 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
+    
+  const notify = () => toast.success("Thanks for Contacting, Will get back to you soon!!!", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,7 +39,7 @@ function Contact() {
       );
   };
   return (
-    <section id="contact" className="relative">
+    <section id="contact" className="relative">      
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -136,12 +149,26 @@ function Contact() {
             />
           </div>
           <button
+            onClick={notify}
             type="submit"
             className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Submit
           </button>
         </form>
+        <ToastContainer
+          style={{marginTop:"65px"}}
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
       </div>
     </section>
   );
