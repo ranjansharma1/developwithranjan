@@ -73,3 +73,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Use Google Map for your Location
 Link: embed-map.com
 Enter your location and generate html for it
+
+
+### Email Service from email.js Website:
+1. Create email service
+2. Create Email tempalate
+3. Use this link for your template [https://www.emailjs.com/docs/examples/reactjs/]
+3. Set Credential 
+4. make sure you have same massage name in your react as in dashbord"
