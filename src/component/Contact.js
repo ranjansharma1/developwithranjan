@@ -1,43 +1,63 @@
-import React, { useRef } from "react";
+import React, { useRef} from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
-    
-  const notify = () => toast.success("Thanks for Contacting, Will get back to you soon!!!", {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "colored",
-    });
   const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = () => {
     emailjs
-      .sendForm(
-        "service_vv96fem",
-        "template_3vxwi39",
-        form.current,
-        "urznp8qO1-kNjXODK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("massage sent successfully");
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+        .sendForm(
+            "service_vv96fem",
+            "template_3vxwi39",
+            form.current,
+            "urznp8qO1-kNjXODK"
+        )
+        .then(
+            (result) => {
+            console.log(result.text);
+            console.log("massage sent successfully");
+            },
+            (error) => {
+            console.log("Error: "+error.text);
+            }
+        );
+
   };
+  const isFormValid=(event)=>{
+    event.preventDefault();
+    const form = event.target;
+    if (form.checkValidity()) {
+        sendEmail();
+        toast.success("Thanks for Contacting, Will get back to you soon!!!", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            })
+        console.log('Email validation successful')
+        event.target.reset();
+    } else {
+        form.reportValidity();
+        toast.error('Sorry, Error Occurred', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            })
+        
+        console.log("Validation failed")
+      }
+  }
+
   return (
     <section id="contact" className="relative">      
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -100,7 +120,7 @@ function Contact() {
 
         <form
           ref={form}
-          onSubmit={sendEmail}
+          onSubmit={isFormValid}
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
@@ -121,6 +141,7 @@ function Contact() {
               id="email"
               name="user_email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -132,6 +153,7 @@ function Contact() {
               id="name"
               name="user_subject"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
             />
           </div>
 
@@ -146,10 +168,10 @@ function Contact() {
               id="message"
               name="user_body"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              required
             />
           </div>
           <button
-            onClick={notify}
             type="submit"
             className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
