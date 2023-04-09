@@ -44,7 +44,7 @@ Enter your location and generate html for it
 
 
 ## Email Service from email.js Website:
-1. Create email service
+1. Create email service - https://dashboard.emailjs.com/admin
 2. Create Email tempalate
 3. Use this link for your template [https://www.emailjs.com/docs/examples/reactjs/]
 3. Set Credential 
@@ -53,3 +53,8 @@ Enter your location and generate html for it
 ## Adding `npm i react-toastify` for massage
 - install `npm i react-toastify` use link: https://www.npmjs.com/package/react-toastify
 - https://fkhadra.github.io/react-toastify/introduction/
+
+## Added FontAwesome for button design
+Index.html: <script src="https://kit.fontawesome.com/03cfaf9c5d.js" crossorigin="anonymous"></script>
+Added External css for Footer: 
+            import "./Footer.css";

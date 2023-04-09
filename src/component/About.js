@@ -1,5 +1,7 @@
 import React from 'react'
 import laptop from "../images/laptop.png";
+import image from "../images/image.jpg";
+import image2 from "../images/image2.jpg";
 
 function About() {
   return (
@@ -18,7 +20,7 @@ function About() {
             <a
               href="#contact"
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              Work With Me
+              Download
             </a>
             <a
               href="#projects"
@@ -27,11 +29,11 @@ function About() {
             </a>
           </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className="lg:max-w-lg lg:w-4/12 md:w-2/5 w-3/5">
           <img
-            className="object-cover object-center rounded opacity-70"
+            className="object-cover object-center rounded-full opacity-70"
             alt="hero"
-            src={laptop}
+            src={image2}
           />
         </div>
       </div>
