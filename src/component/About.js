@@ -2,11 +2,12 @@ import React from 'react'
 import laptop from "../images/laptop.png";
 import image from "../images/image.jpg";
 import image2 from "../images/image2.jpg";
+import backgroundImage from "../images/background.jpg";
 
 function About() {
   return (
     <>
-    <section id="about">
+    <section id="about" >
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
@@ -18,13 +19,15 @@ function About() {
           </p>
           <div className="flex justify-center">
             <a
-              href="#contact"
+              href="https://drive.google.com/file/d/1bSidAo8zI1Xw-kFrvD__fbcpRwcX_c4f/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              Download
+              Download CV
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              className="ml-4 inline-flex text-blue-400 bg-blue-800 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 hover:text-white rounded text-lg">
               See My Past Work
             </a>
           </div>

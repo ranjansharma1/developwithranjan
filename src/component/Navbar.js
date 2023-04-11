@@ -9,7 +9,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Blogs', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Projects', href: '#projects', current: false },
   { name: 'Linked In', href: '#', current: false },
 ]
 
@@ -19,7 +19,7 @@ function classNames(...classes) {
 function Navbar() {
   return (
     <>
-<Disclosure as="nav" className="bg-gray-400 sticky inset-x-0 top-0 z-10">
+<Disclosure as="nav" className="bg-blue-950 sticky inset-x-0 top-0 z-10">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
@@ -57,7 +57,7 @@ function Navbar() {
                         // target="_blank" 
                         // rel="noopener noreferrer"
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          item.current ? 'bg-blue-700 text-white' : 'text-blue-300 hover:bg-blue-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -69,13 +69,13 @@ function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
+                {/* <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+                </button> */}
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">

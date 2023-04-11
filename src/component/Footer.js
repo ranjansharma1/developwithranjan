@@ -5,7 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
-      <footer className="text-blue-600 body-font ">
+      <footer className="text-blue-600 body-font lg:sticky lg:inset-x-0 lg:bottom-0">
         <div className="bg-blue-950 ">
           <div className="container mx-auto py-2  flex flex-wrap flex-col sm:flex-row">
           <div class="flex justify-center items-center">
