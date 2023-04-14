@@ -1,0 +1,18 @@
+.boxshadow{
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.shad{
+    background-color: white;
+    border: 2px solid rgb(123, 123, 229);
+    width: 100px;
+}
+.shad:hover {
+    /* background-color: rgb(253, 253, 253); */
+    box-shadow: 0 0 5px rgb(3, 68, 247), 0 0 25px rgb(86, 128, 218), 0 0 50px rgb(5, 32, 239), 0 0 100px rgb(0, 0, 0) ;
+    border: 2px solid rgb(14, 105, 234);
+  }
+  

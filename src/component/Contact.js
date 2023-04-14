@@ -94,7 +94,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="opacity-50 md:opacity-0 md:hidden bg-blue-800 relative flex flex-wrap py-2 rounded shadow-md mt-3">
+        <div className="opacity-80 md:opacity-0 md:hidden bg-gray-900 relative flex flex-wrap py-2 rounded shadow-md mt-3">
           <div className="lg:w-1/2 px-6 ">
             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
               ADDRESS
@@ -133,26 +133,26 @@ function Contact() {
             new technologies to continuously improve my craft.
           </p>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-blue-200 font-semibold">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-200 font-semibold">
               Email
             </label>
             <input
               type="email"
               id="email"
               name="user_email"
-              className="w-full bg-blue-200 rounded border border-blue-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               required
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-blue-200 font-semibold">
+            <label htmlFor="name" className="leading-7 text-sm text-gray-200 font-semibold">
               Subject
             </label>
             <input
               type="text"
               id="name"
               name="user_subject"
-              className="w-full bg-blue-200 rounded border border-blue-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-200 rounded border border-gray-700 focus:border-gray-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               required
             />
           </div>
@@ -160,20 +160,20 @@ function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-blue-200 font-semibold"
+              className="leading-7 text-sm text-gray-200 font-semibold"
             >
               Message
             </label>
             <textarea
               id="message"
               name="user_body"
-              className="w-full bg-blue-200 rounded border border-blue-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-200 rounded border border-gray-700 focus:border-gray-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               required
             />
           </div>
           <button
             type="submit"
-            className="text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg"
+            className="text-white bg-blue-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-950 rounded text-lg"
           >
             Submit
           </button>
