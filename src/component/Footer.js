@@ -5,8 +5,8 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
-      <footer className="text-blue-600 body-font lg:sticky lg:inset-x-0 lg:bottom-0">
-        <div className="bg-blue-950 ">
+      <footer className="text-blue-600 body-font lg:sticky lg:inset-x-0 lg:bottom-0" >
+        <div className="bg-blue-950 " style={{backgroundColor: "rgba(0, 13, 101, 0.72)"}}>
           <div className="container mx-auto py-2  flex flex-wrap flex-col sm:flex-row">
           <div class="flex justify-center items-center">
           <img src={dwrlogo} alt="logo" className="md:h-10 md:w-10 h-20 w-20 rounded-full mr-2  max-w-full max-h-full" />

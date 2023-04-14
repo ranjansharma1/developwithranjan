@@ -22,8 +22,8 @@ import azure from "../images/azure.png";
 
 function Skills() {
   return (
-    <section id="skills" className="container text-center px-5 py-10  md:pl-28">
-      <div className="flex flex-col">
+    <section id="skills" className="bg-gradient-to-b from-gray-950 to-blue-950">
+      <div className="container text-center px-5 py-10  md:pl-28  flex flex-col">
         <div className="flex">
           <img
             src={skill}

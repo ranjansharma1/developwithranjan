@@ -1,5 +1,5 @@
 import React from 'react'
-import homeIcon from '../images/homeIcon.png'
+import homeIcon from '../images/homeIcon2.png'
 import image from '../images/image.jpg'
 
 import { Fragment } from 'react'
@@ -10,7 +10,8 @@ const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Blogs', href: '#', current: false },
   { name: 'Projects', href: '#projects', current: false },
-  { name: 'Linked In', href: '#', current: false },
+  { name: 'Skills', href: '#skills', current: false },
+  { name: 'Hire Me', href: '#contact', current: false }
 ]
 
 function classNames(...classes) {
@@ -19,14 +20,14 @@ function classNames(...classes) {
 function Navbar() {
   return (
     <>
-<Disclosure as="nav" className="bg-blue-950 sticky inset-x-0 top-0 z-10">
+<Disclosure as="nav" className=" sticky inset-x-0 top-0 z-10 " style={{backgroundColor: "rgba(0, 13, 101, 0.72)"}}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />

@@ -5,17 +5,9 @@ import { projects } from '../data';
 import background from "../images/background.jpg";
 
 function Project() {
-    // const styles = {
-    //     // backgroundImage: `url(${background})`,
-    //     backgroundColor: "rgb(43 43 44 / 93%)",
-    //     backgroundSize: 'cover',
-    //     backgroundRepeat: 'no-repeat',
-    //     backgroundPosition: 'center',
-    //     // height: '100vh'
-    //   };
   return (
     <section id='projects'>
-        <div className="container text-center px-2 py-5  md:pl-28" >
+        <div className="container text-center px-2 py-5  md:pl-28 mt-48 md:mt-0" >
             <div className="flex flex-col">
                 <img src={code} alt="code" className='h-10  inline-block mb-4 sm:h-10 sm:w-10 mx-auto ' />
                 <h1 className='sm:text-4xl text-3xl text-white font-bold mb-4'>Project I've Built</h1>
