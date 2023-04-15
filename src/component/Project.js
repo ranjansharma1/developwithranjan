@@ -20,10 +20,10 @@ function Project() {
                     <a href={project.link}
                     key={project.id}
                     className='sm:w-1/2  h-96 my-5 '>
-                        <div className='flex relative  h-96 mx-5 hover:scale-110 duration-300 hover:shadow-lg hover:shadow-blue-500'>
+                        <div className='flex relative  mx-5 hover:scale-110 duration-300 hover:shadow-lg hover:shadow-blue-500'>
                             <img alt="gallery" className='absolute inset-0 w-full h-auto object-cover object-center' src={project.image}/>                       
                             
-                            <div className='px-8 py-10 relative w-full border-2 border-blue-800 bg-gray-900 opacity-0 hover:opacity-90 hover:bg-blue-950 h-96 sm:min-w-fit'>
+                            <div className='px-8 pt-10 relative w-full border-2 border-blue-800 bg-gray-900 opacity-0 hover:opacity-90 hover:bg-blue-950 h-96 sm:min-w-fit' >
                                 <h2 className='tracking-widest text-lg title-font font-bold text-green-400 mb-1 '>{project.subtitle}</h2>
                                 <h1 className='title-font text-3xl font-medium text-white mb-3'>{project.title}</h1>
                                 <p className='leading-relaxed'>{project.description}</p>
