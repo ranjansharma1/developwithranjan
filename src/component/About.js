@@ -1,6 +1,6 @@
 import React from "react";
 import laptop from "../images/laptop.png";
-import image from "../images/image.jpg";
+import react from "../images/react.gif";
 import image2 from "../images/image2.jpg";
 import background from "../images/background2.png";
 import { useState, useEffect } from "react";
@@ -13,8 +13,9 @@ function About() {
     backgroundSize: "cover",
     backgroundRepeat: "repeat-y",
     backgroundPosition: "center",
-    height: "100vh",
+    // height: "70vh",
     backgroundColor: "red",
+    // border: "2px solid red",  
   };
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi, Meet Ranjan";
@@ -64,19 +65,20 @@ function About() {
                 href="https://drive.google.com/file/d/1bSidAo8zI1Xw-kFrvD__fbcpRwcX_c4f/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg hover:shadow-lg hover:shadow-green-500 hover:text-black"
               >
                 Download CV
               </a>
               <a
                 href="#projects"
-                className="ml-4 inline-flex text-black bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-800 hover:text-white rounded text-lg"
+                className="ml-4 inline-flex text-black bg-blue-700 border-0 py-2 px-6 focus:outline-none 
+                hover:shadow-lg hover:shadow-blue-500 hover:bg-blue-800 hover:text-white rounded text-lg"
               >
                 See My Past Work
               </a>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10">
+          <div className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10 " >
             <img
               className="object-cover object-center rounded-full opacity-90"
               alt="hero"

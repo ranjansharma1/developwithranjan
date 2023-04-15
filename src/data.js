@@ -1,14 +1,28 @@
 import demo from "./images/demo.gif";
+import eshop from "./images/eshop.gif";
+import newslive from "./images/newslive2.gif";
+import qrcode from "./images/qrcode2.gif";
 
 export const projects = [
     {
-      id:"2",
+      id:"1",
       title: "E-commerce",
       subtitle: "Java Full Stack",
       description:
-        "Our Java-based full-stack e-commerce website offers users a seamless online buying experience. Customers can browse through a variety of products, and add them to their shopping carts . A complete inventory management system, order tracking, and customer support are also available on our website.",
-      image: {demo},
+        "This e-commerce website offers users a seamless online buying experience. Customers can browse through a variety of products, and add them to their shopping carts.",
+      image: eshop,
       link: "#",
+      skills: "springboot, Angular, Matarial UI, MYSQL",
+    },
+    {
+      id:"2",
+      title: "World Live News",
+      subtitle: "React-Based Project",
+      description:
+        "This project will show the live news all over the world in different catagories. User can see the live news",
+      image: newslive,
+      link: "#",
+      skills:"HTMl, CSS, JavaScript, Bootstrap 5, React"
     },
     {
       id:"3",
@@ -16,7 +30,7 @@ export const projects = [
       subtitle: "React",
       description:
         "This web application  helps to generate QR Code for your buisness or application. It includes creating QR Code for  Contact, instagram url, Site URL, Wifi, and many more",
-      image: {demo},
+      image: qrcode,
       link: "#",
     },
     {
@@ -25,16 +39,7 @@ export const projects = [
       subtitle: "React and Firebase",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: {demo},
-      link: "#",
-    },
-    {
-      id:"5",
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: {demo},
+      image: demo,
       link: "#",
     },
   ];
