@@ -10,7 +10,7 @@ function Project() {
         <div className="container text-center px-2 py-5  md:pl-28 mt-48 md:mt-0" >
             <div className="flex flex-col">
                 <img src={code} alt="code" className='h-10  inline-block mb-4 sm:h-10 sm:w-10 mx-auto ' />
-                <h1 className='sm:text-4xl text-3xl text-white font-bold mb-4'>Project I've Built</h1>
+                <h1 className='sm:text-4xl text-3xl text-white font-bold mb-4'>My Creative Project</h1>
                 <p className='mx-auto leading-relaxed text-base my-6'>
                 Get ready to be impressed by my portfolio of Full Stack projects, which showcase my ability to design and develop visually stunning and highly functional web applications that provide seamless user experiences.
                 </p>
@@ -30,7 +30,7 @@ function Project() {
                                 <div className='flex  justify-center
                                 align-middle' >
                                     <a href={project.link} target="_blank"                rel="noopener noreferrer" className='m-5 pt-3 rounded-full bg-black 
-                                    hover:scale-90 hover:shadow-lg hover:shadow-blue-500 border-2 border-blue-800' style={{height: "50px" , width:"50px"}} >
+                                    hover:scale-90 hover:shadow-lg hover:shadow-blue-500 border-2 border-blue-800 ' style={{height: "50px" , width:"50px"}} >
                                         <i class="fa-solid fa-eye
                                         fa-flip fa-2xl"></i>
                                     </a>

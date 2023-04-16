@@ -53,7 +53,7 @@ function About() {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white typing-animation">
                 {typedText}
             </h1>
-            <h2 className="text-3xl font-bold ">A Certified Java Full Stack Developer</h2>
+            <h2 className="text-3xl font-bold h2-bg">A Certified Java Full Stack Developer</h2>
             <p className="my-5 leading-relaxed">
               As a passionate Java Full Stack Developer, I thoroughly enjoy
               building innovative web applications that solve real-world

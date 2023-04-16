@@ -18,3 +18,15 @@
     50% { border-color: #000 }
   }
   
+  .hover:h2-bg {
+    animation: fill-background 3s forwards;
+  }
+
+  @keyframes fill-background {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: blue;
+    }
+  }

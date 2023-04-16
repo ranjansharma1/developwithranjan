@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import homeIcon from '../images/homeIcon2.png'
 import image from '../images/image.jpg'
 
@@ -6,18 +6,61 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Blogs', href: '#', current: false },
-  { name: 'Projects', href: '#projects', current: false },
-  { name: 'Skills', href: '#skills', current: false },
-  { name: 'Hire Me', href: '#contact', current: false }
-]
+
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 function Navbar() {
+  const [IsDashboardClicked, setIsDashboardClicked] = useState(false)
+  const [IsBlogsClicked, setIsBlogsClicked] = useState(false)
+  const [IsProjectsClicked, setIsProjectsClicked] = useState(false)
+  const [IsSkillsClicked, setIsSkillsClicked] = useState(false)
+  const [IsHireClicked, setIsHireClicked] = useState(false)
+  
+  const navigation = [
+    { name: 'Dashboard', href: '#', current: IsDashboardClicked },
+    { name: 'Blogs', href: '#', current: IsBlogsClicked },
+    { name: 'Projects', href: '#projects', current: IsProjectsClicked },
+    { name: 'Skills', href: '#skills', current: IsSkillsClicked },
+    { name: 'Hire Me', href: '#contact', current: IsHireClicked }
+  ]
+  const handleButtonClick=(input)=>{
+    if(input==='Dashboard'){
+      setIsDashboardClicked(true)
+      setIsBlogsClicked(false)
+      setIsProjectsClicked(false)
+      setIsSkillsClicked(false)
+      setIsHireClicked(false)
+    }else if(input==='Blogs'){
+      setIsDashboardClicked(false)
+      setIsBlogsClicked(true)
+      setIsProjectsClicked(false)
+      setIsSkillsClicked(false)
+      setIsHireClicked(false)
+    }else if(input==='Projects'){
+      setIsDashboardClicked(false)
+      setIsBlogsClicked(false)
+      setIsProjectsClicked(true)
+      setIsSkillsClicked(false)
+      setIsHireClicked(false)
+    }else if(input==='Skills'){
+      setIsDashboardClicked(false)
+      setIsBlogsClicked(false)
+      setIsProjectsClicked(false)
+      setIsSkillsClicked(true)
+      setIsHireClicked(false)
+    }else if(input==='Hire Me'){
+      setIsDashboardClicked(false)
+      setIsBlogsClicked(false)
+      setIsProjectsClicked(false)
+      setIsSkillsClicked(false)
+      setIsHireClicked(true)
+    }
+  }
+
   return (
     <>
 <Disclosure as="nav" className=" sticky inset-x-0 top-0 z-10 " style={{backgroundColor: "rgba(0, 13, 101, 0.72)"}}>
@@ -55,8 +98,7 @@ function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        // target="_blank" 
-                        // rel="noopener noreferrer"
+                        onClick={() =>handleButtonClick(item.name)}
                         className={classNames(
                           item.current ? 'bg-blue-700 text-white' : 'text-blue-300 hover:bg-blue-700 hover:text-white',
                           'rounded-md px-3 py-2 text-sm font-medium'
@@ -113,7 +155,7 @@ function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="#contact"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Hire Me
@@ -134,6 +176,7 @@ function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  onClick={() =>handleButtonClick(item.name)}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
