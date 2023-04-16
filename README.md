@@ -55,6 +55,8 @@ Enter your location and generate html for it
 - https://fkhadra.github.io/react-toastify/introduction/
 
 ## Added FontAwesome for button design
-Index.html: <script src="https://kit.fontawesome.com/03cfaf9c5d.js" crossorigin="anonymous"></script>
+Check what you can access with free plan: https://fontawesome.com/docs/web/add-icons/how-to
+Update Index.html: 
+    <script src="https://kit.fontawesome.com/03cfaf9c5d.js" crossorigin="anonymous"></script>
 Added External css for Footer: 
             import "./Footer.css";

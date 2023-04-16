@@ -17,7 +17,7 @@ function Project() {
             </div>
             <div className='flex flex-wrap '>
                 {projects.map(project =>(
-                    <a href={project.link}
+                    <div 
                     key={project.id}
                     className='sm:w-1/2  h-96 my-5 '>
                         <div className='flex relative  mx-5 hover:scale-110 duration-300 hover:shadow-lg hover:shadow-blue-500'>
@@ -27,11 +27,24 @@ function Project() {
                                 <h2 className='tracking-widest text-lg title-font font-bold text-green-400 mb-1 '>{project.subtitle}</h2>
                                 <h1 className='title-font text-3xl font-medium text-white mb-3'>{project.title}</h1>
                                 <p className='leading-relaxed'>{project.description}</p>
+                                <div className='flex  justify-center
+                                align-middle' >
+                                    <a href={project.link} target="_blank"                rel="noopener noreferrer" className='m-5 pt-3 rounded-full bg-black 
+                                    hover:scale-90 hover:shadow-lg hover:shadow-blue-500 border-2 border-blue-800' style={{height: "50px" , width:"50px"}} >
+                                        <i class="fa-solid fa-eye
+                                        fa-flip fa-2xl"></i>
+                                    </a>
+                                    <a href={project.gihub} target="_blank"                rel="noopener noreferrer" className="m-5 pt-3 rounded-full bg-black 
+                                    hover:scale-90 hover:shadow-lg hover:shadow-blue-500 border-2 border-blue-800"  style={{height: "50px" , width:"50px"}} >
+                                    <i class="fa-brands fa-github 
+                                    fa-flip fa-2xl"></i>
+                                    </a>
+                            </div>
                             </div>
 
                             
                         </div>
-                    </a>
+                    </div>
                 ))}
             </div>
         </div>
