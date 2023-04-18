@@ -37,7 +37,7 @@ function Strength() {
           {strength.map((str) => (
             <div
               key={str.name}
-              className="mx-5 hover:scale-105 duration-300 hover:border-2 hover:border-white rounded-xl pb-2 my-3"
+              className="mx-10 hover:scale-105 duration-300 hover:border-2 hover:border-white rounded-xl pb-2 my-3"
             >
               <img src={str.image} alt="str_Image"  className="w-48 h-44 rounded-xl" />
               <h2 className="b-text text-left pl-2 font-serif" style={{ marginTop: 10 }} > {str.title} </h2>

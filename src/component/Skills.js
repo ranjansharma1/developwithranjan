@@ -21,6 +21,25 @@ import mongodb from "../images/mongodb.png";
 import azure from "../images/azure.png";
 
 function Skills() {
+  const SkillsDesc=[
+    {html:html, name:"HTML"},
+    {html:css, name:"CSS"},
+    {html:javascript, name:"Javascript"},
+    {html:cpp, name:"C++"},
+    {html:java, name:"Core Java"},
+    {html:angular, name:"Angular"},
+    {html:bootstrap, name:"Bootstrap"},
+    {html:tailwindcss, name:"Tailwind CSS"},
+    {html:springboot, name:"Spring Boot"},
+    {html:node, name:"Node.js"}, 
+    {html:react, name:"ReactJs"}, 
+    {html:mongodb, name:"Mongo DB"},
+    {html:mysql, name:"MY SQL"},
+    {html:git, name:"Git"}, 
+    {html:azure, name:"Azure"},
+
+  ]
+
   return (
     <section id="skills" className="py-10">
       <div className="container text-center mx-auto py-10 flex flex-col">
@@ -35,132 +54,21 @@ function Skills() {
           Skills &amp; Technologies
         </h1>
         <div class="flex items-center justify-center w-full border-2 border-black py-5">
-          <div className="object-center grid grid-cols-2 md:grid-cols-4 lg:gap-x-28 gap-x-24 gap-y-10 ">            
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={html}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">HTML</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={css}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">CSS</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={javascript}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Javascript</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={react}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">React</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={angular}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Angular</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={bootstrap}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Bootstrap</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={tailwindcss}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Tailwind Css</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={java}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">CoreJava</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={springboot}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Spring Boot</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={mysql}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">MySQL</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={mongodb}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Mongo DB</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={git}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Git</h2>
-            </div>
-            <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
-              <img
-                className="  shad p-4   rounded-full"
-                src={azure}
-                alt="Not Available"
-              />
-              <h2 className="font-bold mt-2 ">Azure</h2>
-            </div>
-            
+          <div className="object-center grid grid-cols-2 md:grid-cols-4 lg:gap-x-32 gap-x-24 gap-y-10 ">   
+            {SkillsDesc.map(skill =>(
+              <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
+                <img
+                  className="  shad p-4   rounded-full"
+                  src={skill.html}
+                  alt="Not Available"
+                />
+                <h2 className="font-bold mt-2 ">{skill.name}</h2>
+              </div>
+
+            ) ) }         
             
           </div>
         </div>
-        {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 ">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 w-full sm:w-1/2">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                <img
-                  src={check}
-                  alt="check icon"
-                  className="w-6 h-6 flex-shrink-0 mr-4"
-                />
-
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div> */}
       </div>
     </section>
   );
