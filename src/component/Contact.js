@@ -124,10 +124,10 @@ function Contact() {
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-10 md:mt-0 "
         >
-          <h2 className="text-white sm:text-4xl text-3xl mb-5 font-medium title-font text-center">
+          <h2 className="text-white sm:text-4xl text-3xl mb-5  title-font text-center " style={{fontFamily:"cursive"}}>
             Contact Me
           </h2>
-          <p className="leading-relaxed mb-5">
+          <p className="leading-relaxed mb-5 font-mono">
             I love building innovative web applications that solve real-world
             problems and spend most of my time honing my skills and exploring
             new technologies to continuously improve my craft.
@@ -173,7 +173,9 @@ function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-blue-700 border-0 py-2 px-6 font-semibold focus:outline-none hover:bg-blue-800 rounded text-lg hover:shadow-lg hover:shadow-blue-500 hover:text-black"
+            // className="text-white bg-blue-700 border-0 py-2 px-6 font-semibold focus:outline-none hover:bg-blue-800 rounded text-lg hover:shadow-lg hover:shadow-blue-500 hover:text-black"
+            className="font-semibold transition ease-in-out delay-150 bg-blue-500 hover:translate-y-1 hover:scale-90 hover:bg-gradient-to-r from-blue-500 to-green-500 duration-300 py-2 px-6 rounded text-lg text-white hover:shadow-green-500 hover:text-black hover:shadow-lg " 
+            style={{fontFamily:"monospace"}}
           >
             Submit
           </button>

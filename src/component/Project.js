@@ -11,7 +11,7 @@ function Project() {
             <div className="flex flex-col">
                 <img src={code} alt="code" className='h-10  inline-block mb-4 sm:h-10 sm:w-10 mx-auto ' />
                 <h1 className='sm:text-4xl text-3xl text-white font-bold mb-4'>My Creative Project</h1>
-                <p className='mx-auto leading-relaxed text-base my-6'>
+                <p className='mx-auto leading-relaxed text-base my-6 font-mono' style={{maxWidth:"1000px"}} >
                 Get ready to be impressed by my portfolio of Full Stack projects, which showcase my ability to design and develop visually stunning and highly functional web applications that provide seamless user experiences.
                 </p>
             </div>

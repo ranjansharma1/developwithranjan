@@ -12,17 +12,17 @@ export const projects = [
       "This web application  helps to generate QR Code for your buisness or application. It includes creating QR Code for  Contact, instagram url, Site URL, Wifi, and many more",
     image: qrcode,
     link: "https://dwr-qrcode-react.netlify.app/",
-    gihub:"#"
+    gihub:"https://github.com/ranjansharma1/react-qrcode-generator"
   },
   {
     id: "2",
-    title: "Job Hunt Project",
-    subtitle: "React and Firebase",
+    title: "My PortFolio",
+    subtitle: "React and Tailwindcss",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "This application is a simple react based applicationwhich uses tailwindcss for styling and make UI more attractive.",
     image: demo,
     link: "#",
-    gihub:"#"
+    gihub:"https://github.com/ranjansharma1/developwithranjan"
   },
 
   {
@@ -33,7 +33,7 @@ export const projects = [
       "This e-commerce website offers users a seamless online buying experience. Customers can browse through a variety of products, and add them to their shopping carts.",
     image: eshop,
     link: "#",
-    gihub:"#",
+    gihub:"https://github.com/ranjansharma1/Capstone-ShopForHome",
     skills: "springboot, Angular, Matarial UI, MYSQL",
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     image: newslive,
     link: "#",
     skills: "HTMl, CSS, JavaScript, Bootstrap 5, React",
-    gihub:"#"
+    gihub:"https://github.com/ranjansharma1/News-App-Live-Project"
   },
 ];
 

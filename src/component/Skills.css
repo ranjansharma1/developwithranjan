@@ -23,4 +23,21 @@
     transform: rotate(90deg);
     
 }
+/* .hover-effect {
+    display: inline-block;
+    max-width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to left, transparent, transparent);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.8s;
+  }
+  
+  .hover-effect:hover {
+    background-image: linear-gradient(to left, red 50%, rgb(9, 155, 234) 50%);
+    background-position: 0;
+  }
+   */
+  
   

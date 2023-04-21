@@ -50,10 +50,10 @@ function About() {
       <section id="about" style={styles}>
         <div className="container mx-auto flex px-10 pt-10 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white typing-animation">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white typing-animation" style={{fontFamily:"inherit"}}>
                 {typedText}
             </h1>
-            <h2 className="text-3xl font-bold h2-bg">A Certified Java Full Stack Developer</h2>
+            <h2 className="text-3xl font-bold h2-bg" style={{fontFamily:"cursive"}}>A Certified Java Full Stack Developer</h2>
             <p className="my-5 leading-relaxed">
               As a passionate Java Full Stack Developer, I thoroughly enjoy
               building innovative web applications that solve real-world
@@ -80,7 +80,7 @@ function About() {
           </div>
           <div className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10 " >
             <img
-              className="object-cover object-center rounded-full opacity-90"
+              className="object-cover object-center rounded-full opacity-90 hover:border-4 hover:border-violet-900 filter hover:grayscale"
               alt="hero"
               src={image2}
             />

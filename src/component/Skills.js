@@ -41,7 +41,7 @@ function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-10">
+    <section id="skills" className="py-1">
       <div className="container text-center mx-auto py-10 flex flex-col">
         <div className="flex">
           <img
@@ -50,10 +50,10 @@ function Skills() {
             className=" h-16 inline-block mb-4  mx-auto "
           />
         </div>
-        <h1 className="font-bold text-white text-3xl mb-4 ">
-          Skills &amp; Technologies
+        <h1 className=" text-center font-bold text-white text-3xl mb-10 hover-effect px-5">
+        Good Skills Means <span className="text-blue-400">Good Opportunities</span>
         </h1>
-        <div class="flex items-center justify-center w-full border-2 border-black py-5">
+        <div class="flex items-center justify-center w-full border-2 border-black py-5 ">
           <div className="object-center grid grid-cols-2 md:grid-cols-4 lg:gap-x-32 gap-x-24 gap-y-10 ">   
             {SkillsDesc.map(skill =>(
               <div className="hover:scale-110 transform transition-all duration-300 hover:text-white">
