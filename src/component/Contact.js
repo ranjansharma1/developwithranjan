@@ -61,7 +61,7 @@ function Contact() {
   return (
     <section id="contact" className="relative" >      
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
           <iframe
             width="100%"
             height="100%"
@@ -94,7 +94,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="opacity-80 md:opacity-0 md:hidden bg-gray-900 relative flex flex-wrap py-2 rounded shadow-md mt-3">
+        <div className="opacity-80 md:opacity-0 md:hidden bg-gray-900 relative flex flex-wrap py-2 rounded shadow-md mt-5" style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
           <div className="lg:w-1/2 px-6 ">
             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
               ADDRESS
@@ -122,7 +122,8 @@ function Contact() {
           ref={form}
           onSubmit={isFormValid}
           name="contact"
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-10 md:mt-0 "
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-10 md:mt-0 p-4"
+          style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-5  title-font text-center " style={{fontFamily:"cursive"}}>
             Contact Me
@@ -181,7 +182,7 @@ function Contact() {
           </button>
         </form>
         <ToastContainer
-          style={{marginTop:"65px"}}
+          style={{marginTop:"65px", border:"2px solid red"}}
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}

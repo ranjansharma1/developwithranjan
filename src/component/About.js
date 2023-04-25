@@ -17,6 +17,10 @@ function About() {
     backgroundColor: "red",
     // border: "2px solid yellow",  
   };
+
+  const style2={
+    
+  }
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi, Meet Ranjan";
   const typingSpeed = 60; // in milliseconds
@@ -53,7 +57,7 @@ function About() {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white typing-animation" style={{fontFamily:"inherit"}}>
                 {typedText}
             </h1>
-            <h2 className="text-3xl font-bold h2-bg" style={{fontFamily:"cursive"}}>A Certified Java Full Stack Developer</h2>
+            <h2 className="text-3xl font-bold h2-bg highligter" style={{fontFamily:"cursive"}}>A Certified Java Full Stack Developer</h2>
             <p className="my-5 leading-relaxed">
               As a passionate Java Full Stack Developer, I thoroughly enjoy
               building innovative web applications that solve real-world

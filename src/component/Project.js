@@ -15,15 +15,15 @@ function Project() {
                 Get ready to be impressed by my portfolio of Full Stack projects, which showcase my ability to design and develop visually stunning and highly functional web applications that provide seamless user experiences.
                 </p>
             </div>
-            <div className='flex flex-wrap '>
+            <div className='flex flex-wrap justify-center' style={{border:"2px solid red"}}>
                 {projects.map(project =>(
                     <div 
                     key={project.id}
                     className='sm:w-1/2  h-96 my-5 '>
-                        <div className='flex relative  mx-5 hover:scale-110 duration-300 hover:shadow-lg hover:shadow-blue-500'>
-                            <img alt="gallery" className='absolute inset-0 w-full h-auto object-cover object-center' src={project.image}/>                       
+                        <div className='flex relative  mx-5 hover:scale-110 duration-300 hover:shadow-lg hover:shadow-blue-500 justify-center align-middle'>
+                            <img alt="gallery" className='absolute inset-0 object-cover object-center ' src={project.image} style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)", height:"265px", width:"473px"}}/>                       
                             
-                            <div className='px-8 pt-10 relative w-full border-2 border-blue-800 bg-gray-900 opacity-0 hover:opacity-90 hover:bg-blue-950 h-96 sm:min-w-fit' >
+                            <div className='px-8 pt-10 relative w-full border-2 border-blue-800 bg-gray-900 opacity-0 hover:opacity-90 hover:bg-blue-950 h-96 sm:min-w-fit'>
                                 <h2 className='tracking-widest text-lg title-font font-bold text-green-400 mb-1 '>{project.subtitle}</h2>
                                 <h1 className='title-font text-3xl font-medium text-white mb-3'>{project.title}</h1>
                                 <p className='leading-relaxed'>{project.description}</p>

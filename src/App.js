@@ -7,8 +7,6 @@ import Project from "./component/Project";
 import Skills from "./component/Skills";
 import Strength from "./component/Strength";
 
-import bg1 from "./images/bg1.jpg";
-
 function App() {
 
   return (

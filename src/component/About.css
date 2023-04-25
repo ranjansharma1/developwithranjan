@@ -30,3 +30,12 @@
       background-color: blue;
     }
   }
+
+  .highligter{
+    background: left /0% 100% no-repeat linear-gradient(#062164, #f03d1d);
+    transition: background-size 500ms;
+
+  }
+.highligter:hover{
+  background: left /100% 100% no-repeat linear-gradient(#062164, #f03d1d);
+}

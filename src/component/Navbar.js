@@ -63,7 +63,7 @@ function Navbar() {
 
   return (
     <>
-<Disclosure as="nav" className=" sticky inset-x-0 top-0 z-10 " style={{backgroundColor: "rgba(0, 13, 101, 0.72)"}}>
+<Disclosure as="nav" className=" sticky inset-x-0 top-0 z-10 " style={{backgroundColor: "rgba(0, 13, 101, 0.72)", background: "transparent", backdropFilter:"blur(5px)", transition: "all .3s ease-in"}}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
