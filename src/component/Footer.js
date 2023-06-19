@@ -12,7 +12,7 @@ function Footer() {
           <img src={dwrlogo} alt="logo" className="md:h-10 md:w-10 h-20 w-20 rounded-full mr-2  max-w-full max-h-full" />
           </div>
             <p className="text-gray-300 text-sm text-center sm:text-left mt-3 font-thin">
-              Copyright © 2023 developwithranjan.com
+              © 2023 DWR ALL RIGHT RESERVED
             </p>
             <div className="wrapper inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <div className="icon linkedin" >
