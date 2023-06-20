@@ -2,8 +2,27 @@ import React from "react";
 import laptop from "../images/laptop.jpg";
 import laptop2 from "../images/laptop1.jpg";
 import laptop3 from "../images/laptop3.jpg";
+import { motion } from "framer-motion";
 
 function Strength() {
+  const containerVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: '100vw' 
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      // transition: { type: 'spring' },
+      // whileInView:{ y: [100, 50, 0], opacity: [0, 0, 1] },
+      transition:{ type: 'spring', stiffness: 30, delay: 0.2 }
+    },
+    exit: {
+      x: "-100vh",
+      transition: { ease: 'easeInOut' }
+    }
+  };
+
   const strength = [
     {
       image: laptop,
@@ -26,7 +45,8 @@ function Strength() {
   ];
   return (
     <section id="strength" className="flex item-center py-10">
-      <div className="container text-center mx-auto" >
+      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 1.0 }} className="container text-center mx-auto" >
         <div className=" flex item-center mt-3" >
         <img src="https://img.icons8.com/cotton/64/null/brain-3.png" className="mx-auto animate-bounce"/>
         </div>
@@ -35,7 +55,10 @@ function Strength() {
         </h2>
         <div className="flex flex-wrap justify-center py-6" >
           {strength.map((str) => (
-            <div
+            <motion.div
+              whileInView={{ x: [200, 50, 0], opacity: [0, 0.5, 1]  }}
+              whileHover={{scale:1.2}}
+              transition={{ duration: 0.3, type:"spring", stiffness:50 }}
               key={str.name}
               className="mx-10 hover:scale-105 duration-300 hover:border-2 hover:border-white rounded-xl pb-2 my-3"
             >
@@ -44,10 +67,10 @@ function Strength() {
               <p className=" w-52 text-left pl-2 text-xs text-gray-100 opacity-50 font-mono " style={{ marginTop: 5 }} >
                 {str.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

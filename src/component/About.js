@@ -5,6 +5,8 @@ import image2 from "../images/image2.jpg";
 import background from "../images/background2.png";
 import { useState, useEffect } from "react";
 import "./About.css";
+import { motion } from "framer-motion";
+import { type } from "@testing-library/user-event/dist/type";
 
 function About() {
 
@@ -53,7 +55,8 @@ function About() {
     <>
       <section id="about" style={styles}>
         <div className="container mx-auto flex px-10 pt-10 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.8 }}   className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white typing-animation" style={{fontFamily:"inherit"}}>
                 {typedText}
             </h1>
@@ -81,14 +84,14 @@ function About() {
                 See My Past Work
               </a>
             </div>
-          </div>
-          <div className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10 " >
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10 " >
             <img
-              className="object-cover object-center rounded-full opacity-90 hover:border-4 hover:border-violet-900 filter hover:grayscale"
+              className="object-cover object-center rounded-full opacity-90 hover:border-4 hover:border-violet-900 filter hover:grayscale "
               alt="hero"
               src={image2}
             />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

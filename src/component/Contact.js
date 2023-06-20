@@ -2,6 +2,7 @@ import React, { useRef} from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
@@ -61,7 +62,8 @@ function Contact() {
   return (
     <section id="contact" className="relative" >      
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
+        <motion.div whileInView={{ x: [-100, -50, 0], opacity: [0, 0.5, 1] }}
+          transition={{type:"spring",  stiffness:20 }} className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
           <iframe
             width="100%"
             height="100%"
@@ -93,7 +95,7 @@ function Contact() {
               <p className="leading-relaxed">6204470383</p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="opacity-80 md:opacity-0 md:hidden bg-gray-900 relative flex flex-wrap py-2 rounded shadow-md mt-5" style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
           <div className="lg:w-1/2 px-6 ">
             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
@@ -118,7 +120,9 @@ function Contact() {
           </div>
         </div>
 
-        <form
+        <motion.form
+          whileInView={{ x: [100, 50, 0], opacity: [0, 0.5, 1] }}
+          transition={{type:"spring",  stiffness:20 }} 
           ref={form}
           onSubmit={isFormValid}
           name="contact"
@@ -180,7 +184,7 @@ function Contact() {
           >
             Submit
           </button>
-        </form>
+        </motion.form>
         <ToastContainer
           style={{marginTop:"65px", border:"2px solid red"}}
           position="top-right"

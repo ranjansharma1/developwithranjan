@@ -60,3 +60,12 @@ Update Index.html:
     <script src="https://kit.fontawesome.com/03cfaf9c5d.js" crossorigin="anonymous"></script>
 Added External css for Footer: 
             import "./Footer.css";
+
+
+
+## Added Framer Motion effect to look UI impressive
+- install motion library
+    npm i framer-motion
+-- wherever we need to use motion effect , import the library and bind the tag with motion
+    eg: <motion.div whileInView={{ x: [-100, -50, 0], opacity: [0, 0.5, 1] }} transition={{type:"spring",  stiffness:20 }} whileTap={{scale:0.9}} />
+-- Use this link for more details: https://www.framer.com/motion/examples/
