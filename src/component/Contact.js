@@ -186,7 +186,7 @@ function Contact() {
           </button>
         </motion.form>
         <ToastContainer
-          style={{marginTop:"65px", border:"2px solid red"}}
+          style={{marginTop:"65px"}}
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}

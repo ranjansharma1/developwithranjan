@@ -51,7 +51,7 @@ function Project() {
                 <h1 className="title-font text-3xl font-medium text-white mb-3">
                   {project.title}
                 </h1>
-                <p className="leading-relaxed">{project.description}</p>
+                <p className="leading-relaxed px-3">{project.description}</p>
                 <div className="flex  justify-center align-middle" >
                   <a
                     href={project.link}
