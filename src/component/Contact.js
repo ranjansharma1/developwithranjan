@@ -70,7 +70,7 @@ function Contact() {
             title="map"
             className="absolute inset-0"
             style={{ filter: "opacity(0.9)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=Chhatarpur,+Jharkhand,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=Daltonganj,+Jharkhand,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           <div className="opacity-0 md:opacity-80 bg-gray-900 relative flex flex-wrap py-5 rounded shadow-md mx-5 px-5 ">
             <div className="lg:w-1/2 ">
@@ -79,7 +79,7 @@ function Contact() {
               </h2>
               <p className="mt-1">
                 Daltonganj <br />
-                Jharkhand, India 82213
+                Jharkhand, India 82201
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -103,7 +103,7 @@ function Contact() {
             </h2>
             <p className="mt-1">
               Daltonganj <br />
-              Jharkhand, India 82213
+              Jharkhand, India 822101
             </p>
           </div>
           <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
