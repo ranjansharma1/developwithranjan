@@ -161,6 +161,17 @@ function Contact() {
               required
             />
           </div>
+          <div className="relative mb-4">
+            <label htmlFor="phone" className="leading-7 text-sm text-gray-200 font-semibold">
+              Phone Number
+            </label>
+            <input
+              type="number"
+              id="number"
+              name="user_subject"
+              className="w-full bg-gray-200 rounded border border-gray-700 focus:border-gray-500 focus:ring-4 focus:ring-indigo-900 text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
 
           <div className="relative mb-4">
             <label

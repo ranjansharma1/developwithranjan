@@ -1,8 +1,5 @@
 import React from "react";
 import skill from "../images/skill.png";
-import check from "../images/check.png";
-import { skills } from "../data";
-import { hover } from "@testing-library/user-event/dist/hover";
 import "./Skills.css";
 import cpp from "../images/cpp.png";
 import css from "../images/css.png";
@@ -20,7 +17,6 @@ import mysql from "../images/mysql.png";
 import mongodb from "../images/mongodb.png";
 import azure from "../images/azure.png";
 import { motion } from "framer-motion";
-import { type } from "@testing-library/user-event/dist/type";
 
 function Skills() {
   const SkillsDesc=[

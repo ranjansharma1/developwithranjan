@@ -4,7 +4,7 @@ import image from '../images/image.jpg'
 
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 
@@ -128,7 +128,7 @@ function Navbar() {
                       <img
                         className="h-8 w-8 rounded-full"
                         src={image}
-                        alt="Profile Image"
+                        alt="Profile pic"
                       />
                     </Menu.Button>
                   </div>

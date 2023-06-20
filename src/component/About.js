@@ -1,12 +1,9 @@
 import React from "react";
-import laptop from "../images/laptop.png";
-import react from "../images/react.gif";
 import image2 from "../images/image2.jpg";
 import background from "../images/background2.png";
 import { useState, useEffect } from "react";
 import "./About.css";
 import { motion } from "framer-motion";
-import { type } from "@testing-library/user-event/dist/type";
 
 function About() {
 
@@ -20,9 +17,6 @@ function About() {
     // border: "2px solid yellow",  
   };
 
-  const style2={
-    
-  }
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi, Meet Ranjan";
   const typingSpeed = 60; // in milliseconds
@@ -68,25 +62,32 @@ function About() {
               new technologies to continuously improve my craft.
             </p>
             <div className="flex justify-center">
-              <a
+              <motion.a
+                whileTap={{scale:0.8}}
                 href="https://drive.google.com/file/d/1bSidAo8zI1Xw-kFrvD__fbcpRwcX_c4f/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg hover:shadow-lg hover:shadow-green-500 hover:text-black"
               >
                 Download CV
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileTap={{scale:0.8}}
                 href="#projects"
                 className="ml-4 inline-flex text-black bg-blue-700 border-0 py-2 px-6 focus:outline-none 
                 hover:shadow-lg hover:shadow-blue-500 hover:bg-blue-800 hover:text-white rounded text-lg"
               >
                 See My Past Work
-              </a>
+              </motion.a>
             </div>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10 " >
-            <img
+          <motion.div  whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="lg:max-w-lg lg:w-3/12 md:w-2/5 w-3/5 pt-10 " >
+            <motion.img
+              drag
+              initial={{ opacity: 1, y: 0 }} // Initial position and opacity
+              dragConstraints={{ top: 0, bottom: 0, left: 0, right: 0 }} // Set drag constraints
+              dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }} // Define drag transition properties
+            
               className="object-cover object-center rounded-full opacity-90 hover:border-4 hover:border-violet-900 filter hover:grayscale "
               alt="hero"
               src={image2}

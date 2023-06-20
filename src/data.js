@@ -1,4 +1,3 @@
-import demo from "./images/demo.gif";
 import eshop from "./images/eshop.gif";
 import newslive from "./images/newslive2.gif";
 import qrcode from "./images/qrcode2.gif";

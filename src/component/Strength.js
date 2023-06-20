@@ -5,24 +5,7 @@ import laptop3 from "../images/laptop3.jpg";
 import { motion } from "framer-motion";
 
 function Strength() {
-  const containerVariants = {
-    hidden: { 
-      opacity: 0, 
-      x: '100vw' 
-    },
-    visible: { 
-      opacity: 1, 
-      x: 0,
-      // transition: { type: 'spring' },
-      // whileInView:{ y: [100, 50, 0], opacity: [0, 0, 1] },
-      transition:{ type: 'spring', stiffness: 30, delay: 0.2 }
-    },
-    exit: {
-      x: "-100vh",
-      transition: { ease: 'easeInOut' }
-    }
-  };
-
+  
   const strength = [
     {
       image: laptop,
@@ -48,7 +31,7 @@ function Strength() {
       <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 1.0 }} className="container text-center mx-auto" >
         <div className=" flex item-center mt-3" >
-        <img src="https://img.icons8.com/cotton/64/null/brain-3.png" className="mx-auto animate-bounce"/>
+        <img src="https://img.icons8.com/cotton/64/null/brain-3.png" alt="mind icon not found" className="mx-auto animate-bounce"/>
         </div>
         <h2 className=" py-5  md:mt-0  sm:text-4xl text-3xl text-white font-bold mb-4 ">
           Open For Freelancing Work 
