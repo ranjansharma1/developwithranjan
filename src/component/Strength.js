@@ -28,7 +28,7 @@ function Strength() {
   ];
   return (
     <section id="strength" className="flex item-center py-10">
-      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      <motion.div whileInView={{ y: [0, 0, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 1.0 }} className="container text-center mx-auto" >
         <div className=" flex item-center mt-3" >
         <img src="https://img.icons8.com/cotton/64/null/brain-3.png" alt="mind icon not found" className="mx-auto animate-bounce"/>
@@ -39,7 +39,7 @@ function Strength() {
         <div className="flex flex-wrap justify-center py-6" >
           {strength.map((str) => (
             <motion.div
-              whileInView={{ x: [200, 50, 0], opacity: [0, 0.5, 1]  }}
+              whileInView={{ x: [0, 0, 0], opacity: [0, 0.5, 1]  }}
               whileHover={{scale:1.2}}
               transition={{ duration: 0.3, type:"spring", stiffness:50 }}
               key={str.name}

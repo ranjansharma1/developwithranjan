@@ -62,7 +62,7 @@ function Contact() {
   return (
     <section id="contact" className="relative" >      
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <motion.div whileInView={{ x: [-100, -50, 0], opacity: [0, 0.5, 1] }}
+        <motion.div whileInView={{ x: [0, 0, 0], opacity: [0, 0.5, 1] }}
           transition={{type:"spring",  stiffness:20 }} className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
           <iframe
             width="100%"
@@ -121,7 +121,7 @@ function Contact() {
         </div>
 
         <motion.form
-          whileInView={{ x: [100, 50, 0], opacity: [0, 0.5, 1] }}
+          whileInView={{ x: [0, 0, 0], opacity: [0, 0.5, 1] }}
           transition={{type:"spring",  stiffness:20 }} 
           ref={form}
           onSubmit={isFormValid}

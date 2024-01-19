@@ -1,5 +1,5 @@
 import React from "react";
-import image2 from "../images/image2.jpg";
+import image2 from "../images/image.jpg";
 import background from "../images/background2.png";
 import { useState, useEffect } from "react";
 import "./About.css";
@@ -49,7 +49,7 @@ function About() {
     <>
       <section id="about" style={styles}>
         <div className="container mx-auto flex px-10 pt-10 md:flex-row flex-col items-center">
-          <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          <motion.div whileInView={{ y: [0, 0, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.8 }}   className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white typing-animation" style={{fontFamily:"inherit"}}>
                 {typedText}
@@ -64,7 +64,8 @@ function About() {
             <div className="flex justify-center">
               <motion.a
                 whileTap={{scale:0.8}}
-                href="https://drive.google.com/file/d/1bSidAo8zI1Xw-kFrvD__fbcpRwcX_c4f/view?usp=sharing"
+                // href="https://drive.google.com/file/d/1bSidAo8zI1Xw-kFrvD__fbcpRwcX_c4f/view?usp=sharing"
+                href="https://drive.google.com/file/d/1o7KLPtZQ9Bd3McqaftT8vDdP4LVk7o6-/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg hover:shadow-lg hover:shadow-green-500 hover:text-black"

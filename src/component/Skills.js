@@ -40,7 +40,7 @@ function Skills() {
 
   return (
     <section id="skills" className="py-1">
-      <motion.div whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      <motion.div whileInView={{ y: [0, 0, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 1.0 }} className="container text-center mx-auto py-10 flex flex-col">
         <div className="flex">
           <img
@@ -53,7 +53,7 @@ function Skills() {
         Good Skills Means <span className="text-blue-400">Good Opportunities</span>
         </h1>
         <div class="flex items-center justify-center border-2 border-black py-5 mx-3 " style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
-          <motion.div whileInView={{ x: [-100, -50, 0], opacity: [0.2, 0.5, 1] }}
+          <motion.div whileInView={{ x: [0, 0, 0], opacity: [0.2, 0.5, 1] }}
           transition={{type:"spring",  stiffness:20 }} whileTap={{scale:0.9}}  className="object-center grid grid-cols-2 md:grid-cols-4 lg:gap-x-32 gap-x-24 gap-y-10 ">   
             {SkillsDesc.map(skill =>(
               <div   key={skill.html}  className="hover:scale-110 transform transition-all duration-300 hover:text-white">

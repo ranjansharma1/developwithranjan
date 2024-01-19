@@ -9,11 +9,11 @@ function Project() {
       <div className="container text-center mx-auto py-5  mt-48 md:mt-0">
         <div className="flex flex-col">
           <img src={code} alt="code" className="h-10  inline-block mb-4 sm:h-10 sm:w-10 mx-auto " />
-          <motion.h1 whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          <motion.h1 whileInView={{ y: [0, 0, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.6 }} className="sm:text-4xl text-3xl text-white font-bold mb-4">
             My Creative Project
           </motion.h1>
-          <motion.p whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          <motion.p whileInView={{ y: [0, 0, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.8 }} className="mx-auto leading-relaxed text-base my-6 font-mono" style={{ maxWidth: "1000px" }} >
             Get ready to be impressed by my portfolio of Full Stack projects,
             which showcase my ability to design and develop visually stunning
@@ -30,7 +30,7 @@ function Project() {
           }}
         >
           {projects.map((project) => (
-            <motion.div whileInView={{ x: [100, 50, 0], opacity: [0, 0.5, 1] }}
+            <motion.div whileInView={{ x: [0, 0, 0], opacity: [0, 0.5, 1] }}
             transition={{type:"spring",  stiffness:20 }}  key={project.id} className="relative flex justify-center items-center mx-auto sm:w-1/2  h-80 mt-5 p-2" >
               <img
                 alt="gallery"
