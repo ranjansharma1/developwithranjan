@@ -64,8 +64,7 @@ function About() {
             <div className="flex justify-center">
               <motion.a
                 whileTap={{scale:0.8}}
-                // href="https://drive.google.com/file/d/1bSidAo8zI1Xw-kFrvD__fbcpRwcX_c4f/view?usp=sharing"
-                href="https://drive.google.com/file/d/1o7KLPtZQ9Bd3McqaftT8vDdP4LVk7o6-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PQwclj2I9BIIAY58omqMR7yijtFZpWII/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg hover:shadow-lg hover:shadow-green-500 hover:text-black"

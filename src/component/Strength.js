@@ -34,7 +34,7 @@ function Strength() {
         <img src="https://img.icons8.com/cotton/64/null/brain-3.png" alt="mind icon not found" className="mx-auto animate-bounce"/>
         </div>
         <h2 className=" py-5  md:mt-0  sm:text-4xl text-3xl text-white font-bold mb-4 ">
-          Open For Freelancing Work 
+          Open to <span className="text-blue-400">Full-Time</span> Opportunities
         </h2>
         <div className="flex flex-wrap justify-center py-6" >
           {strength.map((str) => (

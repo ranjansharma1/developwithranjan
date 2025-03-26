@@ -1,7 +1,6 @@
 import React from "react";
 import skill from "../images/skill.png";
 import "./Skills.css";
-import cpp from "../images/cpp.png";
 import css from "../images/css.png";
 import git from "../images/git.png";
 import javascript from "../images/javascript.png";
@@ -13,29 +12,33 @@ import bootstrap from "../images/bootstrap.png";
 import tailwindcss from "../images/tailwindcss.png";
 import java from "../images/java.png";
 import springboot from "../images/springboot.png";
+import microservices from "../images/microservices.png";
 import mysql from "../images/mysql.png";
 import mongodb from "../images/mongodb.png";
 import azure from "../images/azure.png";
+import docker from "../images/docker.png";
+import kubernetes from "../images/kubernetes.png";  
 import { motion } from "framer-motion";
 
 function Skills() {
   const SkillsDesc=[
-    {html:html, name:"HTML"},
-    {html:css, name:"CSS"},
-    {html:javascript, name:"Javascript"},
-    {html:cpp, name:"C++"},
-    {html:java, name:"Core Java"},
-    {html:angular, name:"Angular"},
-    {html:bootstrap, name:"Bootstrap"},
-    {html:tailwindcss, name:"Tailwind CSS"},
-    {html:springboot, name:"Spring Boot"},
-    {html:node, name:"Node.js"}, 
-    {html:react, name:"ReactJs"}, 
-    {html:mongodb, name:"Mongo DB"},
-    {html:mysql, name:"MY SQL"},
-    {html:git, name:"Git"}, 
-    {html:azure, name:"Azure"},
-
+    {skill:java, name:"Core Java"},
+    {skill:springboot, name:"Spring Boot"},
+    {skill:microservices, name:"Microservices"},
+    {skill:mysql, name:"MY SQL"},
+    {skill:html, name:"HTML"},
+    {skill:css, name:"CSS"},    
+    {skill:bootstrap, name:"Bootstrap"},
+    {skill:tailwindcss, name:"Tailwind CSS"},
+    {skill:javascript, name:"Javascript"},    
+    {skill:angular, name:"Angular"},
+    {skill:node, name:"Node.js"}, 
+    {skill:react, name:"ReactJs"}, 
+    {skill:mongodb, name:"Mongo DB"},
+    {skill:git, name:"Git"},     
+    // {skill:docker, name:"Docker"},
+    {skill:kubernetes, name:"Kubernetes"},
+    {skill:azure, name:"Azure"}
   ]
 
   return (
@@ -55,14 +58,14 @@ function Skills() {
         <div class="flex items-center justify-center border-2 border-black py-5 mx-3 " style={{ borderRadius:"20px", boxShadow:"0px 5px 15px rgba(0,0,0,0.9)"}}>
           <motion.div whileInView={{ x: [0, 0, 0], opacity: [0.2, 0.5, 1] }}
           transition={{type:"spring",  stiffness:20 }} whileTap={{scale:0.9}}  className="object-center grid grid-cols-2 md:grid-cols-4 lg:gap-x-32 gap-x-24 gap-y-10 ">   
-            {SkillsDesc.map(skill =>(
-              <div   key={skill.html}  className="hover:scale-110 transform transition-all duration-300 hover:text-white">
+            {SkillsDesc.map(skills =>(
+              <div   key={skills.skill}  className="hover:scale-110 transform transition-all duration-300 hover:text-white">
                 <img
                   className="  shad p-4   rounded-full"
-                  src={skill.html}
+                  src={skills.skill}
                   alt="Not Available"
                 />
-                <h2 className="font-bold mt-2 ">{skill.name}</h2>
+                <h2 className="font-bold mt-2 ">{skills.name}</h2>
               </div>
 
             ) ) }         
